@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A college CEP project on hospital facilities and patient care.">
+  <title>Hospital Feedback | CEP Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="logo">✚ Care & Feedback</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <span class="tag">Community Engagement Project (CEP)</span>
+    <h1>Feedback on Hospital Facilities and Patient Care</h1>
+    <p>Understanding patient experiences to encourage better hospital facilities, improved communication, and quality patient care.</p>
+    <a class="btn" href="#feedback">Explore Feedback Form ↓</a>
+  </div>
+
+  <main>
+    <section id="about">
+      <div class="section-heading">
+        <h2>About Our Project</h2>
+        <p>Listening to patients is an important step towards improvement.</p>
+      </div>
+      <p class="intro">
+        This Community Engagement Project focuses on understanding the
+        importance of hospital facilities and patient care through feedback.
+        It aims to identify areas where patients may experience difficulties
+        and how their suggestions can support better healthcare services.
+      </p>
+    </section>
+
+    <section id="objectives">
+      <div class="section-heading">
+        <h2>Project Objectives</h2>
+        <p>What this project aims to understand</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">🏥</div>
+          <h3>Evaluate Facilities</h3>
+          <p>Understand perceptions of cleanliness, waiting areas, and basic hospital amenities.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">💙</div>
+          <h3>Understand Patient Care</h3>
+          <p>Explore patient experiences with staff behaviour, communication, and support.</p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">📈</div>
+          <h3>Identify Improvements</h3>
+          <p>Use feedback themes to suggest ways to improve the patient experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="need">
+      <div class="soft-section">
+        <div class="section-heading">
+          <h2>Why Is Patient Feedback Needed?</h2>
+        </div>
+        <p>
+          Patient feedback helps healthcare providers understand service
+          quality from the patient's perspective. It can reveal concerns
+          about waiting time, cleanliness, staff communication, accessibility,
+          and comfort. Reviewing this feedback can help hospitals prioritise
+          improvements and build trust with patients.
+        </p>
+      </div>
+    </section>
+
+    <section id="methodology">
+      <div class="section-heading">
+        <h2>Methodology</h2>
+        <p>A simple and organised approach to collecting feedback</p>
+      </div>
+
+      <ol class="steps">
+        <li><strong>Prepare a questionnaire:</strong> Create clear questions about facilities and patient care.</li>
+        <li><strong>Seek permission:</strong> Obtain approval from the hospital before collecting responses.</li>
+        <li><strong>Explain the purpose:</strong> Inform participants about the educational project and obtain voluntary consent.</li>
+        <li><strong>Collect feedback:</strong> Use an anonymous questionnaire without requesting unnecessary personal or medical information.</li>
+        <li><strong>Review responses:</strong> Summarise the feedback and identify recurring suggestions.</li>
+        <li><strong>Recommend improvements:</strong> Prepare practical suggestions based on the responses actually collected.</li>
+      </ol>
+    </section>
+
+    <section id="feedback">
+      <div class="section-heading">
+        <h2>Patient Feedback Form</h2>
+        <p>Demonstration questionnaire for the CEP project</p>
+      </div>
+
+      <div class="feedback-box">
+        <div class="notice">
+          <strong>Demo form:</strong> This form runs only in your browser.
+          It does not send or save responses. Do not enter names, contact
+          details, medical records, or other sensitive information.
+        </div>
+
+        <form id="feedbackForm">
+          <div class="field">
+            <label for="cleanliness">1. How would you rate hospital cleanliness?</label>
+            <select id="cleanliness" name="cleanliness" required>
+              <option value="">Select a rating</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+              <option>Very Poor</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="staff">2. How would you rate staff behaviour?</label>
+            <select id="staff" name="staff" required>
+              <option value="">Select a rating</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+              <option>Very Poor</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="waiting">3. How would you rate the waiting time?</label>
+            <select id="waiting" name="waiting" required>
+              <option value="">Select a rating</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+              <option>Very Poor</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="communication">4. How would you rate staff communication?</label>
+            <select id="communication" name="communication" required>
+              <option value="">Select a rating</option>
+              <option>Excellent</option>
+              <option>Good</option>
+              <option>Average</option>
+              <option>Poor</option>
+              <option>Very Poor</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="satisfaction">5. Overall, how satisfied are you with the facilities and care?</label>
+            <select id="satisfaction" name="satisfaction" required>
+              <option value="">Select a rating</option>
+              <option>Very Satisfied</option>
+              <option>Satisfied</option>
+              <option>Neutral</option>
+              <option>Dissatisfied</option>
+              <option>Very Dissatisfied</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="suggestions">6. What general improvements would you suggest? (Optional)</label>
+            <textarea id="suggestions" name="suggestions" maxlength="500"
+              placeholder="Share general suggestions. Please do not include personal or medical details."></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit Demo Feedback</button>
+          <div id="formResult" class="result" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="outcomes">
+      <div class="section-heading">
+        <h2>Expected Outcomes</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Better Understanding</h3>
+          <p>Understand the importance of hospital facilities and patient experiences.</p>
+        </article>
+
+        <article class="card">
+          <h3>Areas for Improvement</h3>
+          <p>Identify possible service improvements from genuine feedback, if collected.</p>
+        </article>
+
+        <article class="card">
+          <h3>Practical Suggestions</h3>
+          <p>Prepare recommendations that support a more comfortable and patient-centred environment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div class="soft-section">
+        <div class="section-heading">
+          <h2>Conclusion</h2>
+        </div>
+        <p>
+          Patient feedback is a valuable way to understand experiences with
+          hospital facilities and care. A well-planned, respectful feedback
+          process can help identify opportunities for improvement, encourage
+          better communication, and support patient-centred services.
+          Actual findings and recommendations should be based on responses
+          collected with appropriate permission and consent.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Feedback on Hospital Facilities and Patient Care</strong></p>
+    <p>Community Engagement Project (CEP) | Educational Website</p>
+    <p>Created to promote awareness of patient feedback and service improvement.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
